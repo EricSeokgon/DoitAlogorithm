@@ -23,9 +23,9 @@ public class IntSet {
         return num;
     }
 
-    public int indexOf(int num) {
+    public int indexOf(int n) {
         for (int i = 0; i < num; i++) {
-            if (set[i] == null) {
+            if (set[i] == n) {
                 return i;
             }
         }
@@ -76,7 +76,7 @@ public class IntSet {
             return false;
         }
         for (int i = 0; i < num; i++) {
-            int j=0;
+            int j = 0;
             for (; j < s.num; j++) {
                 if (set[i] == s.set[j]) {
                     break;
